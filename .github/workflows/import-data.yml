@@ -1,0 +1,35 @@
+name: Import new data from XIVAPI
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+    
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: "import-data"
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
+    - name: Install dependencies
+      run: pip install requests
+    - name: Import data
+      run: python scripts/xivapi_calls.py
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        branch: import-data
+        title: 'Import new game data'
+        commit-message: 'Import new game data'

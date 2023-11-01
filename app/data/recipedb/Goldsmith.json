@@ -36469,6 +36469,48 @@
   },
   {
     "baseLevel": 90,
+    "difficulty": 6600,
+    "durability": 60,
+    "id": 35686,
+    "level": 642,
+    "maxQuality": 15368,
+    "name": {
+      "de": "Sammler-Waschbecken",
+      "en": "Connoisseur's Washbasin",
+      "fr": "Vasque sur pied de dilettante",
+      "ja": "好事家向けのウォッシュスタンド"
+    },
+    "progressDivider": 180,
+    "progressModifier": 100,
+    "qualityDivider": 180,
+    "qualityModifier": 100,
+    "stars": 4,
+    "suggestedControl": 3280,
+    "suggestedCraftsmanship": 3700
+  },
+  {
+    "baseLevel": 90,
+    "difficulty": 7040,
+    "durability": 60,
+    "id": 35694,
+    "level": 643,
+    "maxQuality": 16308,
+    "name": {
+      "de": "Sammler-Marmorbrunnen",
+      "en": "Connoisseur's Marble Fountain",
+      "fr": "Fontaine en marbre de dilettante",
+      "ja": "好事家向けのマーブルファウンテン"
+    },
+    "progressDivider": 180,
+    "progressModifier": 100,
+    "qualityDivider": 180,
+    "qualityModifier": 100,
+    "stars": 4,
+    "suggestedControl": 3280,
+    "suggestedCraftsmanship": 3700
+  },
+  {
+    "baseLevel": 90,
     "difficulty": 9240,
     "durability": 70,
     "id": 35704,
@@ -36580,7 +36622,7 @@
     "level": 640,
     "maxQuality": 9000,
     "name": {
-      "de": "Zeromus' Erinnerung",
+      "de": "Zeromus-Erinnerung",
       "en": "Abyssal Wings Display",
       "fr": "Ailes abyssales",
       "ja": "ゼロムスの追憶"
